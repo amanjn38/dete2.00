@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/login">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/etEmail"
+        android:background="@drawable/shape"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="250dp"
+        android:hint="  Email/Mobile number"
+        android:padding="7dp"
+        android:alpha="0.7"
+        android:drawableLeft="@drawable/email"
+        android:inputType="textMultiLine"/>
+
+    <EditText
+        android:alpha="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/etPassword"
+        android:background="@drawable/shape"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_centerVertical="true"
+        android:hint="  Password"
+        android:drawableLeft="@drawable/key"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="7dp"
+        android:padding="7dp"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="10dp"
+        android:id="@+id/horizontalLinearLayout">
+
+        <CheckBox
+            android:id="@+id/cbRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="35dp"
+            android:alpha="0.6"
+            android:textColor="#8A6429"
+            android:background="@drawable/shape"
+            android:text=" Remember Me!!"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/horizontalLinearLayout"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:alpha="0.6"
+            android:background="@drawable/shape"
+            android:padding="5dp"
+            android:text="Forgot Password ?"
+            android:textColor="#8A6429"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:alpha="0.8"
+        android:background="@drawable/valuess"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/horizontalLinearLayout"
+        android:layout_marginTop="15dp"/>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/btnLogin"
+        android:textColor="#8A6429"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="35dp"
+        android:alpha="0.6"
+        android:layout_marginRight="35dp"
+        android:textSize="20sp"
+        android:text="Login with Account"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/textView4">
+
+        <ImageView
+            android:id="@+id/ivFacebook"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="100dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/facebookround" />
+
+        <ImageView
+            android:id="@+id/ivGoogle"
+            android:layout_width="38dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="35dp"
+
+            android:clickable="true"
+            app:srcCompat="@drawable/google5" />
+
+        <ImageView
+            android:id="@+id/ivTwitter"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="35dp"
+
+            android:clickable="true"
+            app:srcCompat="@drawable/twitter" />
+
+    </LinearLayout>
+
+</RelativeLayout>

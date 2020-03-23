@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/register">
+
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="35dp"
+        android:alpha="0.7"
+        android:background="@drawable/shape"
+        android:paddingLeft="7dp"
+        android:hint="  Full Name"
+        android:drawableLeft="@drawable/person"
+        android:inputType="text"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/etEmailLogin"
+        android:layout_below="@id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="35dp"
+        android:alpha="0.7"
+        android:background="@drawable/shape"
+        android:hint="  Email"
+        android:drawableLeft="@drawable/email"
+        android:inputType="text"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/etPhoneLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etEmailLogin"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="35dp"
+        android:alpha="0.7"
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/phone"
+        android:hint="  Mobile Number"
+        android:inputType="text"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/etPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="35dp"
+        android:alpha="0.7"
+        android:background="@drawable/shape"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/key"
+        android:padding="7dp"
+        android:layout_below="@id/etPhoneLogin"/>
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="35dp"
+        android:alpha="0.7"
+        android:background="@drawable/shape"
+        android:hint="  Confirm Password"
+        android:inputType="textPassword"
+        android:padding="7dp"
+        android:drawableLeft="@drawable/key"
+        android:layout_below="@id/etPasswordLogin"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:alpha="0.8"
+        android:background="@drawable/valuess"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/etConfirmPassword"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvAlreadySignedUp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btnRegister"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="35dp"
+        android:alpha="0.6"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="Already have an account ? Login In."
+        android:textColor="#8A6429"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

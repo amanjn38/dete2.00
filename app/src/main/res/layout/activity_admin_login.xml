@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/login">
+
+    <EditText
+        android:id="@+id/etEmailAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:alpha="0.7"
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/email"
+        android:hint="  Email/Mobile number"
+        android:inputType="text"
+        android:padding="7dp" />
+
+    <EditText
+        android:alpha="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/etPasswordAdmin"
+        android:background="@drawable/shape"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_centerVertical="true"
+        android:hint="  Password"
+        android:drawableLeft="@drawable/key"
+        android:layout_below="@id/etEmailAdmin"
+        android:layout_marginTop="7dp"
+        android:padding="7dp"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/etPasswordAdmin"
+        android:layout_marginTop="10dp"
+        android:id="@+id/horizontalLinearLayout">
+
+
+        <TextView
+            android:id="@+id/tvForgotPasswordAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:alpha="0.6"
+            android:background="@drawable/shape"
+            android:padding="5dp"
+            android:text="Forgot Password ?"
+            android:textColor="#8A6429"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLoginAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Admin"
+        android:alpha="0.8"
+        android:background="@drawable/valuess"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/horizontalLinearLayout"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/noAnAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="215dp"
+        android:alpha="0.6"
+        android:background="@drawable/shape"
+        android:padding="5dp"
+        android:text="I am not an Admin ?"
+        android:textColor="#8A6429"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/btnLoginAdmin"/>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    android:background="@drawable/slider_background"
+    android:layout_margin="8dp">
+    <ImageView
+        android:id="@+id/horizontal_scroll_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/emailgreen"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/model"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_scroll_image"
+        android:text="Redmi 5A"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:textSize="10sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/model"
+        android:text="SD 425 Processor"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        />
+
+    <TextView
+        android:textSize="10sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        android:text="TextView"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
